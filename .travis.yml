@@ -8,6 +8,7 @@ android:
   - android-24
   - extra-android-m2repository
 script: cd android_app && ./gradlew assembleDebug
+before_deploy: cp app/build/outputs/apk/app-debug.apk openScale-dev-build.apk
 deploy:
   provider: releases
   api_key:
