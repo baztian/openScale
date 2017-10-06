@@ -52,7 +52,7 @@ public class BluetoothMedisanaBS444 extends BluetoothCommunication {
 
     @Override
     public boolean checkDeviceName(String btDeviceName) {
-        if (btDeviceName.startsWith("013197")) {
+        if (btDeviceName.startsWith("013197") || btDeviceName.startsWith("0203B")) {
             return true;
         }
 
